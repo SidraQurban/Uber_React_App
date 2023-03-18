@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native';
@@ -18,7 +17,7 @@ const screenOptions = {
         <Stack.Navigator initialRouteName="Home" screenOptions ={screenOptions}>
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name='RastaurantDetail' component={RastaurantDetail} />
-        </Stack.Navigator>S
+        </Stack.Navigator>
 
       </NavigationContainer>
     )
