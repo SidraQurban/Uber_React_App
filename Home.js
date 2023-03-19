@@ -10,7 +10,7 @@ import BottomTabs from './BottomTabs';
 
 
 export default function Home({navigation}) {
-const [restaurantData, setRastaurantData] = React.useState(localRestaurants)
+const [restaurantData, setRestaurantData] = React.useState(localRestaurants)
     return (
         <SafeAreaView style={{ backgroundColor: "#eee", flex: 1}}>
             <View style={{ backgroundColor: "white", padding: 15}}>

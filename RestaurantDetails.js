@@ -5,7 +5,7 @@ import About from './About'
 import MenuItems from './MenuItems'
 import ViewCart from './ViewCart'
 
-export default function RastaurantDetails({ route, navigation}) {
+export default function RestaurantDetails({ route, navigation}) {
   return (
     <View>
       <About route={route}/>

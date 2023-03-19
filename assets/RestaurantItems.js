@@ -7,17 +7,17 @@ export const localRestaurants =[
     {
         name: "Ghetto",
         image_url:
-         "https://media.istockphoto.com/id/1080306910/photo/table-decorated-for-buffet-in-event.jpg?s=1024x1024&w=is&k=20&c=cZuVWASniFUT-7ZRRuMZ-oJOZGltP7ffYtg8IOso8Fg=",
-        categories: ["Fast Food"],
-        price: "$$",
-        reviews: 4967,
+         "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+         categories:  [{title: "Fast Food"}, {title: "Snacks"}, {title:"Ice-Cream"}, {title: "Drinks"} ],
+        price: "$18",
+        reviews: "1500",
         rating: 4.9,
     },
     {
         name: "Baya Bar Bay Ridge",
         image_url: 
         "https://images.unsplash.com/photo-1543007631-283050bb3e8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-        categories: ["Cafe", "Bar"],
+        categories:  [{title: "Bar"}, {title: "Burgers"}, {title:"Ice-Creams"}, {title: "Drinks"} ],
         price: "$$",
         reviews: 2987,
         rating: 4.6,
@@ -26,7 +26,7 @@ export const localRestaurants =[
         name: "Benihana",
         image_url: 
         "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        categories: ["Cafe", "Food"],
+        categories:  [{title: "Cafe"}, {title: "Fast-Food"}, {title:"Chocolates"}, {title: "Drinks"} ],
         price: "$$",
         reviews: 3879,
         rating: 4.7,
@@ -35,7 +35,7 @@ export const localRestaurants =[
         name: "Resto Cafe",
         image_url:
          "https://images.unsplash.com/photo-1567880905822-56f8e06fe630?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-        categories: ["Cafe","Drinks"],
+         categories:  [ {title: "Fast-Foods"}, {title:"Snacks"}, {title: "Drinks"} ],
         price: "$$",
         reviews: 4987,
         rating: 4.9,
@@ -44,7 +44,7 @@ export const localRestaurants =[
         name: "Desi Food",
         image_url: 
         "https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        categories: ["desi Foods"],
+        categories:  [ {title: "Fast-Foods"}, {title:"Snacks"}, {title: "Drinks"} ],
         price: "$$",
         reviews: 4398,
         rating: 4.8,
@@ -60,7 +60,7 @@ export default function RestaurantItems({ navigation, ...props}) {
           <TouchableOpacity
           key= {index}
           activeOpacity={1} style={{ marginBottom: 30}}
-          onPress={() => navigation.navigate('RastaurantDetail', {
+          onPress={() => navigation.navigate('Restaurant Detail', {
             name: restaurant.name,
             image: restaurant.image_url,
             price: restaurant.price,

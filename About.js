@@ -4,10 +4,10 @@ import React from 'react';
 const RestaurantInfoo = {
   name:"Comfrot Food",
   image: "https://images.unsplash.com/photo-1543007631-283050bb3e8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-  price: "$$",
-  reviews:"1900",
+  price: "$19",
+  reviews: "1900",
   rating:4.5,
-  categories: [{title: "Thai"}, {title: "Food"}],
+  categories: [{title: "Thai"}, {title: "Food"}, {title:"Coffee"}],
 };
 
 export default function About(props) {
