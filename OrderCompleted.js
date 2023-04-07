@@ -2,7 +2,7 @@ import { View, Text, SafeAreaView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import LottieView from "lottie-react-native";
-import firebase from './fireBase';
+// import firebase from './fireBase';
 import MenuItems from './MenuItems';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -28,7 +28,7 @@ export default function OrderCompleted() {
     });
   
    useEffect(() => {
-      const db  = firebase.firestore();
+      // const db  = firebase.firestore();
     const unsubscribe=  db
       .collection("orders")
       .orderBy("createdAt", "desc")
